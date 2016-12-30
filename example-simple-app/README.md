@@ -1,4 +1,5 @@
 # 介紹
+
 本專案包含基本的 React app ，且使用 [alt](http://alt.js.org) ([flux 框架](https://facebook.github.io/flux/docs/in-depth-overview.html#content)) 框架來組織前端。
 
 雖然本專案包含前端、後端和測試，但本專案的目地在建立前端的練習和測試環境，所以我們簡化後端程式。
