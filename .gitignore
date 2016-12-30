@@ -1,0 +1,7 @@
+# General
+bundle.js
+bundle.js.map
+vendor.bundle.js
+
+# example projects
+example-simple-app/node_modules
