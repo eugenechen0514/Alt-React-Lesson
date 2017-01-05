@@ -12,10 +12,10 @@ import Page from '../Page';
 describe('<Page /> 外觀,', () => {
   var wrapper;
   beforeEach(() => {
-    wrapper = shallow(<Page />);
+    wrapper = shallow(<Page title="我是 Page" />);
   });
 
-  it('快照保護 - 沒有輸入任何 props', () => {
+  it('快照保護 - 輸入 title = "我是 Page"', () => {
     expect(toJson(wrapper)).toMatchSnapshot();
   });
 });
