@@ -1,0 +1,112 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 400;
+    background-color: #fff9f3;
+}
+
+
+.container {
+    position: relative;
+    border: 5px double green;
+    height: auto;
+}
+
+.panel-header {
+    background-color: gray;
+}
+
+.row {
+    text-align: center;
+    padding: 5px 0px;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.vertical-dot {
+    width: 20px;
+    height: 50px;
+}
+
+.cell-left {
+    width: 20px;
+    float: left;
+    border: 1px dotted black;
+}
+
+.cell-right {
+    width: calc(100% - 20px);
+    float: left;
+    border: 1px dotted black;
+    text-align: center;
+}
+
+.cell-right-first {
+    width: calc(100% - 20px);
+    float: left;
+    border: 1px dotted black;
+    text-align: center;
+}
+
+.cell-right-second {
+    width: calc(100% - 20px);
+    float: left;
+    border: 1px dotted black;
+    text-align: center;
+}
+
+.cleared {
+    clear: both;
+}
+
+.calender {
+    /*height: 300px;*/
+}
+
+.horizontal-dot {
+    display: none;
+}
+
+@media screen and (min-width: 321px) {
+    .horizontal-dot {
+        display: inline-block;
+        border: 1px dotted black;
+        width: 20%;
+        float: left;
+    }
+
+    .cell-left {
+        display: none;
+        width: 20px;
+        float: left;
+        border: 1px dotted black;
+    }
+
+    .cell-right-first {
+        border: 1px dotted black;
+        width: 40%;
+        float: left;
+    }
+
+    .cell-right-second {
+        border: 1px dotted black;
+        width: 40%;
+        float: left;
+    }
+}
